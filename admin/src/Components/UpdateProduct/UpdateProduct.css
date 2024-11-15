@@ -1,0 +1,99 @@
+.update-product {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px 50px;
+    margin: 20px 30px;
+    border-radius: 6px;
+    background: white;
+}
+
+.updateproduct-itemfield {
+    width: 100%;
+    color: #7b7b7b;
+    font-size: 16px;
+}
+
+.updateproduct-itemfield input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    padding-left: 15px;
+    border: 1px solid #c3c3c3;
+    outline: none;
+    color: #7b7b7b;
+    font-family: 'Poppins';
+    font-size: 14px;
+}
+
+.updateproduct-price {
+    display: flex;
+    gap: 40px;
+}
+
+.update-product-selector {
+    padding: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 14px;
+    color: #7b7b7b;
+    border: 1px solid #7b7b7b8d;
+    border-radius: 4px;
+}
+
+.updateproduct-thumbnail-img {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    object-fit: contain;
+    margin: 10px 0px;
+}
+
+.updateproduct-btn {
+    margin-top: 20px;
+    width: 160px;
+    height: 50px;
+    border-radius: 6px;
+    background: #6079ff;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fetch-product-btn {
+    margin-top: 10px;
+    width: 160px;
+    height: 50px;
+    border-radius: 6px;
+    background: #6079ff; /* Green background to differentiate it from Update */
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fetch-product-btn:hover {
+    background-color: #6079ff; /* Darker green on hover */
+}
+
+.fetch-product-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+    .fetch-product-btn {
+        width: 140px; /* Adjust width for smaller screens */
+        height: 45px;
+    }
+
+    .fetch-product-title {
+        font-size: 16px; /* Smaller title on mobile */
+    }
+}

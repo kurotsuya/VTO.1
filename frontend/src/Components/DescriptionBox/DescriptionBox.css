@@ -1,0 +1,136 @@
+/* Base Styling for Description Box */
+.descriptionbox {
+    margin: 120px 170px;
+}
+
+.descriptionbox-navigator {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.descriptionbox-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    width: 171px;
+    height: 70px;
+    border: 1px solid #d0d0d0;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+    user-select: none;
+}
+
+.descriptionbox-nav-box.fade {
+    background: #FBFBFB;
+    color: #555;
+}
+
+/* Active state for the selected tab */
+.descriptionbox-nav-box:hover,
+.descriptionbox-nav-box:not(.fade) {
+    background: #f5f5f5;
+    color: #ff5733;
+}
+
+/* Description Box Content Styling */
+.descriptionbox-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid #D0D0D0;
+    padding: 48px;
+    padding-bottom: 70px;
+}
+
+.descriptionbox-description h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.descriptionbox-description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.descriptionbox-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.descriptionbox-btn:hover {
+    background-color: #e14e2f;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1280px) {
+    .descriptionbox {
+        margin: 60px 60px;
+    }
+    .descriptionbox-navigator {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 800px) {
+    .descriptionbox {
+        margin: 60px 20px;
+    }
+    
+    .descriptionbox-nav-box {
+        width: auto; /* Make nav box fit text */
+        height: auto; /* Adjust height */
+        padding: 10px 15px;
+    }
+
+    .descriptionbox-description {
+        font-size: 14px;
+        padding: 30px;
+    }
+
+    .descriptionbox-description h3 {
+        font-size: 20px;
+    }
+
+    .descriptionbox-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+.descriptionbox .read-more {
+    color: #ff5733;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .descriptionbox .read-more:hover {
+    color: #e04e00;
+  }
+
+@media (max-width: 500px) {
+    .descriptionbox {
+        margin: 20px;
+    }
+
+    .descriptionbox-description h3 {
+        font-size: 18px;
+    }
+
+    .descriptionbox-description p {
+        font-size: 14px;
+    }
+
+    .descriptionbox-btn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

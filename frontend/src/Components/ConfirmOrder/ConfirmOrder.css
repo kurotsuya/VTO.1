@@ -1,0 +1,175 @@
+.confirm-order {
+    margin: 100px 170px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  
+  .order-details {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .order-details h2 {
+    font-size: 24px;
+    color: #454545;
+    margin-bottom: 20px;
+  }
+  
+  .order-details label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .order-details input,
+  .order-details textarea {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ebebeb;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 20px;
+  }
+  
+  .order-details textarea {
+    height: 80px;
+  }
+  
+  .payment-method {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .payment-method label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .order-details button {
+    width: 262px;
+    height: 58px;
+    outline: none;
+    border: none;
+    background: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .cart-summary {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ebebeb;
+  }
+  
+  .cart-summary h3 {
+    font-size: 20px;
+    color: #454545;
+    margin-bottom: 20px;
+  }
+  
+  .cart-summary .cart-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .cart-summary h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #454545;
+    margin-top: 20px;
+    text-align: right;
+  }
+  .cart-summary img, 
+.order-details img {
+  width: 15%; /* Default to full container width */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 300px; /* Limit maximum size */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Soft shadow */
+  margin: 10px 0; /* Add space around the image */
+  object-fit: cover; /* Ensure good cropping if needed */
+}
+
+.cart-summary img:hover, 
+.order-details img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+  
+  @media (max-width: 1280px) {
+    .confirm-order {
+      margin: 60px 50px;
+      flex-direction: column;
+    }
+  
+    .order-details button {
+      max-width: 200px;
+      height: 45px;
+      font-size: 13px;
+    }
+  
+    .cart-summary {
+      margin-top: 30px;
+    }
+    .cart-summary img, 
+    .order-details img {
+      max-width: 250px; /* Slightly smaller for medium screens */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .confirm-order {
+      margin: 30px 20px;
+    }
+  
+    .order-details input,
+    .order-details textarea {
+      height: 30px;
+      font-size: 14px;
+    }
+  
+    .order-details textarea {
+      height: 60px;
+    }
+  
+    .order-details button {
+      max-width: 150px;
+      height: 40px;
+      font-size: 12px;
+    }
+  
+    .cart-summary {
+      padding: 15px;
+    }
+  
+    .cart-summary h3,
+    .cart-summary h4 {
+      font-size: 16px;
+    }
+    .cart-summary img, 
+  .order-details img {
+    max-width: 100%; /* Scale to fit smaller screens */
+    margin: 5px 0; /* Reduce spacing */
+  }
+  }
+  

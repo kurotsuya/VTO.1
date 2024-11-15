@@ -1,0 +1,147 @@
+/* Base Styling for About Page */
+.about {
+  font-family: 'Arial', sans-serif;
+  padding: 50px 80px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+/* Header Styling */
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Section Title Styling */
+h2 {
+  font-size: 28px;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+  text-align: left;
+  margin-top: 40px; /* Add margin-top here to push the section down */
+}
+
+/* Paragraph Styling */
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Step-by-Step Guide */
+ol {
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
+ol li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+ol li strong {
+  color: #ff5733;
+}
+
+/* Testimonials Section */
+blockquote {
+  background: #fff;
+  padding: 20px;
+  border-left: 5px solid #ff5733;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: #666;
+  font-size: 18px;
+  position: relative;
+}
+
+blockquote footer {
+  text-align: right;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+blockquote::before {
+  content: '“';
+  font-size: 40px;
+  color: #ff5733;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+/* Contact Section */
+.about-content h3 {
+  font-size: 22px;
+  color: #333;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+/* Styling for Links/Email */
+.about-content p a {
+  color: #ff5733;
+  text-decoration: none;
+}
+
+.about-content p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 1280px) {
+  .about {
+      padding: 40px 60px;
+  }
+  h1 {
+      font-size: 32px;
+  }
+  h2 {
+      font-size: 24px;
+  }
+  blockquote {
+      font-size: 16px;
+  }
+  ol li {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+      padding: 30px 40px;
+  }
+  .about-header h1 {
+      font-size: 28px;
+  }
+  .about-header p {
+      font-size: 16px;
+  }
+  h2 {
+      font-size: 20px;
+  }
+  blockquote {
+      font-size: 14px;
+  }
+  ol li {
+      font-size: 14px;
+  }
+  .about-content p {
+      font-size: 14px;
+  }
+}

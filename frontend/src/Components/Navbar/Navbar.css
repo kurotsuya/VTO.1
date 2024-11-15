@@ -1,0 +1,162 @@
+/* Base Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+}
+
+/* Make Navbar Sticky */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures navbar stays on top */
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out; /* Smooth transition for changes */
+}
+
+/* Add a different background or style when scrolled */
+.navbar.scrolled {
+    background: #fcb69f; /* You can change this color as desired */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.nav-logo p {
+    color: #330008e5;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.nav-logo img {
+    width: 40px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: #555;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-menu li:hover {
+    color: #ff5733;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-login-cart button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    background: #1d0004e5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-login-cart button:hover {
+    background: #470101;
+}
+
+.nav-login-cart img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.nav-cart-count {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+    background: #ff0000;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+    left: -15px;
+}
+.nav-logo .logo-link {
+    text-decoration: none; /* Remove the underline */
+  }
+  
+/* Responsive Styling */
+@media (max-width: 1280px) {
+    .navbar {
+        padding: 12px 30px;
+    }
+    .nav-logo p {
+        font-size: 22px;
+    }
+    .nav-menu {
+        gap: 30px;
+        font-size: 16px;
+    }
+    .nav-login-cart button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-menu {
+        display: none; /* Hide the menu for smaller screens, can be replaced with a hamburger menu */
+    }
+    .nav-login-cart button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .nav-login-cart img {
+        width: 24px;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        padding: 8px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-logo {
+        transform: scale(0.9);
+    }
+    .nav-login-cart {
+        margin-top: 10px;
+        gap: 10px;
+        transform: scale(0.9);
+    }
+}

@@ -1,0 +1,164 @@
+
+.virtual-try-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #836b6b; 
+  }
+  
+ 
+  .virtual-try-container {
+    width: 100%;
+    max-width: 1000px; 
+    background: rgb(240, 222, 206);
+    border-radius: 12px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    padding-left: 90px; 
+    padding-right: 90px;
+    padding-top: 20px;
+    text-align: center; 
+  }
+  
+
+  .virtual-try-title {
+    font-size: 28px; 
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .virtual-try-description {
+    font-size: 18px; 
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+ 
+  .image-comparison-container {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+  }
+  
+  .image-preview,
+  .image-rendered {
+    margin: 0 20px; 
+    text-align: center;
+  }
+  
+  .preview-title,
+  .rendered-title {
+    margin: 10px 0;
+    font-size: 20px; 
+    color: #3b3030;
+  }
+  
+  
+  .preview-image,
+  .rendered-image {
+    width: 90%; 
+    max-width: 350px; 
+    border-radius: 12px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+  }
+  
+
+  .camera-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; 
+  }
+  
+  .camera-content {
+    position: relative;
+    background: white;
+    border-radius: 12px; 
+    padding: 30px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    width: 90%; 
+    max-width: 600px; 
+  }
+  
+  
+  .webcam {
+    width: 100%; 
+    border-radius: 12px; 
+  }
+  
+
+  .button {
+    display: inline-block;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin: 10px 0; 
+  }
+  
+  .add-to-cart-button {
+    background-color: #FF5722; 
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #e64a19; 
+    transform: translateY(-2px); 
+  }
+  
+  .open-camera-button {
+    background-color: #4CAF50; 
+  }
+  
+  .open-camera-button:hover {
+    background-color: #45a049; 
+    transform: translateY(-2px);
+  }
+  
+  .upload-image-button {
+    background-color: #2196F3; 
+  }
+  
+  .upload-image-button:hover {
+    background-color: #0b7dda; 
+    transform: translateY(-2px); 
+  }
+  
+
+  .button-section {
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 20px;
+  }
+  
+  .camera-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; 
+  }
+  
+  .btn {
+    background-color: #FF5722; 
+    padding: 10px 15px;
+    border-radius: 6px; 
+    color: white; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background 0.3s ease, transform 0.2s ease; 
+  }
+  
+  .btn:hover {
+    background-color: #e64a19; 
+    transform: translateY(-2px); 
+  }
+  
