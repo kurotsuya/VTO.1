@@ -90,10 +90,7 @@ import './CSS/LoginSignup.css'
     :<p className="loginsignup-login">Create an account?<span onClick ={()=>{setState("Sign Up")}}> Click here</span></p>}
     
     
-    <div className="loginsignup-agree">
-      <input type= "checkbox" name = '' id =''/>
-      <p>By proceeding, I agree to the terms of use & privacy policy,</p>
-    </div>
+   
     </div>      
     </div>
   )

@@ -280,6 +280,25 @@ const fetchUser = async (req, res, next) => {
     }
 };
 
+//profile
+app.put('/profile/update', fetchUser, async (req, res) => {
+    const { name, email } = req.body;
+
+    try {
+        const user = await Users.findById(req.user.id);
+        if (!user) return res.status(404).json({ success: false, message: "User not found" });
+
+        if (name) user.name = name;
+        if (email) user.email = email;
+
+        await user.save();
+        res.json({ success: true, message: "Profile updated successfully" });
+    } catch (error) {
+        console.error("Error updating profile:", error);
+        res.status(500).json({ success: false, message: "Internal server error" });
+    }
+});
+
 
 app.post("/confirmorder", async (req, res) => {
     const { fullName, city, address, paymentMethod, items } = req.body;

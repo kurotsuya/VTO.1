@@ -7,6 +7,8 @@ const UpdateProduct = () => {
     name: '',
     new_price: '',
     old_price: '',
+    image: '',   // Add state for the image URL
+    category: '', // Add state for the category
   });
 
   // Fetch product details to update
@@ -56,7 +58,6 @@ const UpdateProduct = () => {
 
   return (
     <div className="update-product">
-     
       <div className="updateproduct-itemfield">
         <p>Product ID</p>
         <input
@@ -67,39 +68,69 @@ const UpdateProduct = () => {
         />
         <button className="fetch-product-btn" onClick={() => fetchProductDetails(productId)}>Fetch Product</button>
       </div>
-      <div className="updateproduct-itemfield">
-        <p>Product Title</p>
-        <input
-          value={productDetails.name}
-          onChange={changeHandler}
-          type="text"
-          name="name"
-          placeholder="Type here"
-        />
-      </div>
-      <div className="updateproduct-itemfield">
-        <p>New Price</p>
-        <input
-          value={productDetails.new_price}
-          onChange={changeHandler}
-          type="number"
-          name="new_price"
-          placeholder="New Price"
-        />
-      </div>
-      <div className="updateproduct-itemfield">
-        <p>Old Price</p>
-        <input
-          value={productDetails.old_price}
-          onChange={changeHandler}
-          type="number"
-          name="old_price"
-          placeholder="Old Price"
-        />
-      </div>
-      <button onClick={updateProductHandler} className="updateproduct-btn">
-        Update
-      </button>
+
+      {productDetails.id && (  // Display details only if product is found
+        <div>
+          <div className="updateproduct-itemfield">
+            <p>Product Title</p>
+            <input
+              value={productDetails.name}
+              onChange={changeHandler}
+              type="text"
+              name="name"
+              placeholder="Product Title"
+            />
+          </div>
+
+          <div className="updateproduct-itemfield">
+            <p>New Price</p>
+            <input
+              value={productDetails.new_price}
+              onChange={changeHandler}
+              type="number"
+              name="new_price"
+              placeholder="New Price"
+            />
+          </div>
+
+          <div className="updateproduct-itemfield">
+            <p>Old Price</p>
+            <input
+              value={productDetails.old_price}
+              onChange={changeHandler}
+              type="number"
+              name="old_price"
+              placeholder="Old Price"
+            />
+          </div>
+
+          {/* Show Product Image */}
+          <div className="updateproduct-itemfield">
+            <p>Product Image</p>
+            <img
+              src={productDetails.image}
+              alt={productDetails.name}
+              className="updateproduct-thumbnail-img"
+            />
+          </div>
+
+          {/* Show Category */}
+          <div className="updateproduct-itemfield">
+            <p>Category</p>
+            <input
+              value={productDetails.category}
+              onChange={changeHandler}
+              type="text"
+              name="category"
+              placeholder="Category"
+            />
+          </div>
+
+          <button onClick={updateProductHandler} className="updateproduct-btn">
+            Update
+          </button>
+        </div>
+      )}
     </div>
   );
 };

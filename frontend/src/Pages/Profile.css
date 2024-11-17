@@ -1,78 +1,103 @@
 /* Profile Page Styles */
 .profile {
-  max-width: 800px;               /* Increased width for larger profile container */
-  margin: 30px auto;              /* Center the profile container with some space at top and bottom */
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-height: 80vh;               /* Ensure the profile container takes at least 80% of the viewport height */
+  max-width: 800px;               /* Width of the profile container */
+  margin: 30px auto;              /* Center align with spacing on top and bottom */
+  padding: 20px;                  /* Add spacing inside the container */
+  background-color: #f9f9f9;      /* Light background for profile container */
+  border-radius: 10px;            /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  min-height: 80vh;               /* Occupies at least 80% of viewport height */
 }
 
 .profile h1 {
-  font-size: 2rem;
-  color: #333;
-  text-align: center;
-  margin-bottom: 20px;
+  font-size: 2rem;                /* Larger font size for main heading */
+  color: #333;                    /* Dark text color for contrast */
+  text-align: center;             /* Center align text */
+  margin-bottom: 20px;            /* Add spacing below */
 }
 
 .profile-message {
-  color: red;
-  text-align: center;
-  margin-bottom: 15px;
+  color: red;                     /* Alert or error messages in red */
+  text-align: center;             /* Center align text */
+  margin-bottom: 15px;            /* Add spacing below */
 }
 
 .profile-image {
-  text-align: center;
-  margin-bottom: 30px;
+  text-align: center;             /* Center align the profile image */
+  margin-bottom: 30px;            /* Add spacing below image */
 }
 
 .profile-img {
-  width: 120px;                  /* Slightly smaller image size */
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;             /* Ensure the image maintains aspect ratio and fits well in circle */
-  border: 3px solid #ddd;        /* Optional: border around the image */
+  width: 120px;                   /* Set width of the image */
+  height: 120px;                  /* Set height of the image */
+  border-radius: 50%;             /* Circular shape */
+  object-fit: cover;              /* Ensure proper aspect ratio */
+  border: 3px solid #ddd;         /* Optional: Border for a clean look */
 }
 
 .profile-info p {
-  font-size: 1.1rem;
-  margin: 10px 0;
+  font-size: 1.1rem;              /* Slightly larger font for information */
+  margin: 10px 0;                 /* Add spacing between info rows */
+}
+
+.profile-info input {
+  width: 100%;                    /* Full width inputs */
+  padding: 10px;                  /* Spacing inside inputs */
+  margin: 12px 0;                 /* Spacing between inputs */
+  border: 1px solid #ddd;         /* Subtle border for input fields */
+  border-radius: 5px;             /* Rounded input corners */
+  font-size: 1rem;                /* Consistent font size for inputs */
 }
 
 .profile-info strong {
-  color: #555;
+  color: #555;                    /* Slightly muted color for labels */
+}
+
+.profile-edit-button {
+  display: block;                 /* Button takes a block layout */
+  width: 100%;                    /* Full width button */
+  padding: 12px 20px;             /* Padding inside the button */
+  background-color: #02070c;      /* Primary button color */
+  color: white;                   /* Text color for contrast */
+  border: none;                   /* Remove border */
+  border-radius: 5px;             /* Rounded corners for button */
+  cursor: pointer;                /* Pointer cursor on hover */
+  font-size: 1rem;                /* Font size consistent with inputs */
+}
+
+.profile-edit-button:hover {
+  background-color: #3e4449; ;      /* Darker shade on hover */
 }
 
 .profile-reset {
-  margin-top: 30px;
+  margin-top: 30px;               /* Space above password reset section */
 }
 
 .profile-reset h3 {
-  margin-top: 20px;
-  font-size: 1.2rem;
-  color: #333;
+  margin-top: 20px;               /* Space above heading */
+  font-size: 1.2rem;              /* Slightly larger font for reset section heading */
+  color: #333;                    /* Consistent heading color */
 }
 
 .profile-reset input {
-  width: 100%;
-  padding: 10px;
-  margin: 12px 0;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 1rem;
+  width: 100%;                    /* Full width inputs */
+  padding: 10px;                  /* Spacing inside input fields */
+  margin: 12px 0;                 /* Space between inputs */
+  border: 1px solid #ddd;         /* Light border for inputs */
+  border-radius: 5px;             /* Rounded input corners */
+  font-size: 1rem;                /* Consistent input font size */
 }
 
 .profile-reset button {
-  padding: 12px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
+  padding: 12px 20px;             /* Padding inside reset button */
+  background-color: #02070c;      /* Primary color for button */
+  color: white;                   /* Text color for contrast */
+  border: none;                   /* No border for button */
+  border-radius: 5px;             /* Rounded button corners */
+  cursor: pointer;                /* Pointer cursor on hover */
+  font-size: 1rem;                /* Consistent font size with inputs */
 }
 
 .profile-reset button:hover {
-  background-color: #0056b3;
+  background-color: #3e4449;      /* Darker shade for hover effect */
 }

@@ -1,11 +1,14 @@
 import './Navbar.css';
-import navlogo from '../../assets/nav-logo.svg'; 
+import navlogo from '../../assets/nav-logo.svg';
+import { Link } from 'react-router-dom'; // Ensure React Router is installed
 
 const Navbar = () => {
   return (
     <div className="navbar">
-      <img src={navlogo} alt="Logo" className="nav-logo" />
-     
+      <Link to="/admin">
+        <img src={navlogo} alt="Logo" className="nav-logo" />
+      </Link>
+      
     </div>
   );
 };

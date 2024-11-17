@@ -14,7 +14,6 @@ const ListProduct = () => {
   };
 
   useEffect(() => {
-   
     fetchInfo(); 
   }, []);
 
@@ -36,6 +35,7 @@ const ListProduct = () => {
       <table className="listproduct-table">
         <thead>
           <tr>
+            <th>Product ID</th> {/* New column for Product ID */}
             <th>Product</th>
             <th>Old Price</th>
             <th>New Price</th>
@@ -46,6 +46,7 @@ const ListProduct = () => {
         <tbody>
           {allproducts.map((product) => (
             <tr key={product.id}>
+              <td>{product.id}</td> {/* Display Product ID */}
               <td>
                 <img
                   src={product.image}
@@ -54,8 +55,8 @@ const ListProduct = () => {
                 />
                 {product.name}
               </td>
-              <td>Tk { product.old_price}</td>
-              <td>Tk { product.new_price}</td>
+              <td>Tk {product.old_price}</td>
+              <td>Tk {product.new_price}</td>
               <td>{product.category}</td>
               <td>
                 <img
